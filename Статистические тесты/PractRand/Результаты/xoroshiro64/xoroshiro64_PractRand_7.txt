@@ -1,0 +1,53 @@
+RNG_test using PractRand version 0.95
+RNG = RNG_stdin32, seed = unknown
+test set = expanded, folding = extra
+
+rng=RNG_stdin32, seed=unknown
+length= 1 kilobyte (2^10 bytes), time= 0.4 seconds
+  Test Name                         Raw       Processed     Evaluation
+  FPF-14+6/64:all                   R= +19.5  p~=   1e-5    suspicious       
+  ...and 15 test result(s) without anomalies
+
+rng=RNG_stdin32, seed=unknown
+length= 2 kilobytes (2^11 bytes), time= 0.7 seconds
+  no anomalies in 30 test result(s)
+
+rng=RNG_stdin32, seed=unknown
+length= 4 kilobytes (2^12 bytes), time= 1.2 seconds
+  no anomalies in 70 test result(s)
+
+rng=RNG_stdin32, seed=unknown
+length= 8 kilobytes (2^13 bytes), time= 2.1 seconds
+  Test Name                         Raw       Processed     Evaluation
+  DC7-6x2Bytes-1:indep              R=  +8.7  p =   2e-4    unusual          
+  ...and 152 test result(s) without anomalies
+
+rng=RNG_stdin32, seed=unknown
+length= 16 kilobytes (2^14 bytes), time= 3.9 seconds
+  Test Name                         Raw       Processed     Evaluation
+  [Low1/16]FPF-14+6/64:all          R= +21.7  p~=   1e-6    mildly suspicious
+  [Low4/64]FPF-14+6/64:all          R= +21.9  p~=   1e-6    suspicious       
+  ...and 246 test result(s) without anomalies
+
+rng=RNG_stdin32, seed=unknown
+length= 32 kilobytes (2^15 bytes), time= 6.9 seconds
+  no anomalies in 338 test result(s)
+
+rng=RNG_stdin32, seed=unknown
+length= 64 kilobytes (2^16 bytes), time= 11.1 seconds
+  no anomalies in 425 test result(s)
+
+rng=RNG_stdin32, seed=unknown
+length= 128 kilobytes (2^17 bytes), time= 15.9 seconds
+  Test Name                         Raw       Processed     Evaluation
+  [Low4/64]BRank(18):128(1)         R= +24.8  p~=  1.6e-8   suspicious       
+  ...and 498 test result(s) without anomalies
+
+rng=RNG_stdin32, seed=unknown
+length= 256 kilobytes (2^18 bytes), time= 21.2 seconds
+  Test Name                         Raw       Processed     Evaluation
+  DC7-6x2Bytes-1:both               R=  +7.4  p =  2.6e-4   unusual          
+  [Low1/32]BRank(18):128(1)         R= +1272  p~=  5.4e-384   FAIL !!!!!!!   
+  [Low4/64]BRank(18):128(2)         R= +35.1  p~=  1.3e-11   VERY SUSPICIOUS 
+  ...and 573 test result(s) without anomalies
+
