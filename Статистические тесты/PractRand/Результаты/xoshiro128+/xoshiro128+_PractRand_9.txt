@@ -1,0 +1,10 @@
+RNG_test using PractRand version 0.95
+RNG = RNG_stdin32, seed = unknown
+test set = expanded, folding = extra
+
+rng=RNG_stdin32, seed=unknown
+length= 1 kilobyte (2^10 bytes), time= 0.6 seconds
+  Test Name                         Raw       Processed     Evaluation
+  FPF-14+6/64:all                   R= +35.0  p~=   5e-14     FAIL           
+  ...and 15 test result(s) without anomalies
+

@@ -1,0 +1,80 @@
+RNG_test using PractRand version 0.95
+RNG = RNG_stdin64, seed = unknown
+test set = expanded, folding = extra
+
+rng=RNG_stdin64, seed=unknown
+length= 1 kilobyte (2^10 bytes), time= 0.4 seconds
+  no anomalies in 16 test result(s)
+
+rng=RNG_stdin64, seed=unknown
+length= 2 kilobytes (2^11 bytes), time= 0.7 seconds
+  no anomalies in 30 test result(s)
+
+rng=RNG_stdin64, seed=unknown
+length= 4 kilobytes (2^12 bytes), time= 1.3 seconds
+  Test Name                         Raw       Processed     Evaluation
+  [Low4/16]FPF-14+6/64:all          R= +16.6  p~=   1e-4    unusual          
+  [Low8/32]FPF-14+6/64:all          R= +16.6  p~=   1e-4    unusual          
+  ...and 68 test result(s) without anomalies
+
+rng=RNG_stdin64, seed=unknown
+length= 8 kilobytes (2^13 bytes), time= 2.4 seconds
+  Test Name                         Raw       Processed     Evaluation
+  [Low1/8]FPF-14+6/64:all           R= +19.7  p~=   9e-6    mildly suspicious
+  [Low4/32]FPF-14+6/64:all          R= +19.5  p~=   1e-5    mildly suspicious
+  [Low8/64]DC7-6x2Bytes-1:both      R=  +8.5  p =  7.7e-4   unusual          
+  [Low8/64]FPF-14+6/64:all          R= +19.5  p~=   1e-5    mildly suspicious
+  ...and 149 test result(s) without anomalies
+
+rng=RNG_stdin64, seed=unknown
+length= 16 kilobytes (2^14 bytes), time= 4.2 seconds
+  Test Name                         Raw       Processed     Evaluation
+  [Low4/32]BCFN(0+0,13-9,T)         R= +15.0  p =  1.6e-4   unusual          
+  ...and 247 test result(s) without anomalies
+
+rng=RNG_stdin64, seed=unknown
+length= 32 kilobytes (2^15 bytes), time= 7.3 seconds
+  no anomalies in 338 test result(s)
+
+rng=RNG_stdin64, seed=unknown
+length= 64 kilobytes (2^16 bytes), time= 11.5 seconds
+  Test Name                         Raw       Processed     Evaluation
+  [Low4/32]BCFN(0+0,13-9,T)         R= +23.8  p =  1.4e-6   mildly suspicious
+  ...and 424 test result(s) without anomalies
+
+rng=RNG_stdin64, seed=unknown
+length= 128 kilobytes (2^17 bytes), time= 16.4 seconds
+  no anomalies in 499 test result(s)
+
+rng=RNG_stdin64, seed=unknown
+length= 256 kilobytes (2^18 bytes), time= 22.0 seconds
+  no anomalies in 576 test result(s)
+
+rng=RNG_stdin64, seed=unknown
+length= 512 kilobytes (2^19 bytes), time= 27.9 seconds
+  no anomalies in 655 test result(s)
+
+rng=RNG_stdin64, seed=unknown
+length= 1 megabyte (2^20 bytes), time= 33.8 seconds
+  no anomalies in 733 test result(s)
+
+rng=RNG_stdin64, seed=unknown
+length= 2 megabytes (2^21 bytes), time= 39.6 seconds
+  Test Name                         Raw       Processed     Evaluation
+  [Low4/16]DC7-5x4Bytes-1:indep     R=  -2.0  p = 1-1e-4    unusual          
+  ...and 810 test result(s) without anomalies
+
+rng=RNG_stdin64, seed=unknown
+length= 4 megabytes (2^22 bytes), time= 45.5 seconds
+  no anomalies in 889 test result(s)
+
+rng=RNG_stdin64, seed=unknown
+length= 8 megabytes (2^23 bytes), time= 51.2 seconds
+  no anomalies in 966 test result(s)
+
+rng=RNG_stdin64, seed=unknown
+length= 16 megabytes (2^24 bytes), time= 57.1 seconds
+  Test Name                         Raw       Processed     Evaluation
+  [Low1/64]BRank(18):384(1)         R= +2650  p~=  9.8e-799   FAIL !!!!!!!   
+  ...and 1044 test result(s) without anomalies
+
